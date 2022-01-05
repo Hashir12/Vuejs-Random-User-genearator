@@ -1,0 +1,18 @@
+<html>
+<head>
+    <title>VueJs User Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+    <img :class="gender" v-bind:src="pic" alt="">
+    <h1>{{firstName}} {{lastName}}</h1>
+    <h3>{{email}}</h3>
+    <button :class="gender" v-on:click="getUser()">Get random User</button>
+</div>
+
+
+</body>
+<script src="https://unpkg.com/vue@3.0.5"></script>
+<script src="app.js"></script>
+</html>
